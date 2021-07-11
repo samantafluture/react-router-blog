@@ -1,1 +1,3 @@
-# 1925-React-Router# react-router-blog
+# Blog built with:
+- React
+- React Router
