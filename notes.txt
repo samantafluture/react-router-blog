@@ -1,0 +1,34 @@
+============
+REACT-ROUTER
+============
+
+<Switch>
+- ele envita que o Router continue buscando outros caminhos com o mesmo nome
+
+Pagina404
+- deixa aberto, não precisa colocar pathname
+- pois vc cria as rotas com pathnames que existem
+- e as que não existem vao pra pagina 404!
+
+Aplicação Tradicional x SPA (single page application)
+- tradicional
+    . cliente faz requisição para a página "/sobre"
+    . servidor dá uma resposta com a página "sobre.html"
+- SPA   
+    . cliente faz requisição para a página "/sobre"
+    . servidor dá uma resposta com a página "index.html"
+    . quem é responsável por exibir o conteúdo é o js
+    . com o index.html, já carregamos todas as infos
+    . e o js rendezira o componente específico "sobre" e exibe esta página
+    . para acessar outra página, não precisa "bater no servidor de novo"
+    . pois ele já devolveu todo o index.html que precisamos
+    . react router vai procurar a rota e vai renderizar o componente da página solicitada
+    . sensação de que está sempre dentro de um ex (ex: spotify, gmail)
+
+<Link> e to=""
+- em vez de <a href="">
+- para não recarregar a página, não fazer uma nova requisição
+- o js só renderizou o componente responsável por aquela rota
+
+Ronta aninhada
+- rota dentro de rota, nested route
